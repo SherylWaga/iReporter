@@ -1,0 +1,152 @@
+body{
+    background-color:lightgrey;
+}
+form {
+    margin:0 auto;
+    width:300px
+
+  }
+  input {
+    margin-bottom:3px;
+    padding:10px;
+    width: 100%;
+    border:1px solid #CCC
+  }
+  button {
+    padding:10px
+    
+  }
+  label {
+    cursor:pointer
+  }
+  #form-switch {
+    display:none
+  }
+  #register-form {
+    display:none
+  }
+  #form-switch:checked~#register-form {
+    display:block
+  }
+  #form-switch:checked~#login-form {
+    display:none
+  }
+  /* Add a black background color to the top navigation */
+.topnav {
+    background-color:#3f1f09;
+    overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color:#3f1f09 ;
+    color: white;
+}
+.btn{
+  background-color:#0080ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#3f1f09;
+  color: black;
+  text-align: right;
+}
+.danger{
+  background-color:red;
+  border: none;
+  color: rgb(14, 12, 12);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+
+}
+table ,th ,td{
+  text-align: center;
+  border: 1px solid black
+} 
+th{
+  background-color: gray;
+  color: black;
+}
+select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+img{
+  height: 300px;
+  width: 450px;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
