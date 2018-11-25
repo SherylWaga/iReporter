@@ -13,9 +13,7 @@
       <a href="update.html"> Update Entry</a>
       <a href="viewentries.html">View Entries</a>
       
-      
-
-    </div>
+          </div>
     <!-- end of navbar -->
     <div class="divide">
       <!-- Container -->
@@ -27,13 +25,16 @@
 
 
         </form>
+         <p>Click the button to add location</p>
+
+<button class="btn"onclick="getLocation()">Geo location</button>
+
+<p id="demo"></p>   
+         </div>
       </div>
 
     </div>
-
-    <div >
-
-     <div id="register" class="animate form">
+         <div id="register" class="animate form">
       <form  action="profile.html" autocomplete="on">                  
        <p> 
          <label for="usernamesignup" class="uname" data-icon="u">TITLE:</label>
@@ -55,23 +56,29 @@
           <br><br>
           <input class="sub" type="submit" value ="Submit">
         </p>
-
-
       </form>
-
-
-
-
     </div>
-
   </div>
-
-
   <!-- Footer -->
   <div class="footer">
     <p>@Copyright 2018</p>
   </div>
   <!-- End Footer -->
+   <script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
 </body>
 </head>
 </html>
