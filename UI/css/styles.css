@@ -1,6 +1,24 @@
-body {
+.topnav {
+    background-color:#3f1f09;
+    overflow: hidden;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}body {
     margin: 0;
     font-family: sans-serif;
+    
 }
 .hero {
     /* Sizing */   
@@ -12,7 +30,7 @@ body {
     text-align: center;
      /* Background styles */
 
- background-image:url("images/blk.jpg");
+ background-image:url("images/blk.jpg"); 
  background-size: cover;
  background-position: center center;
  background-repeat: no-repeat;
@@ -55,4 +73,15 @@ body {
     color: black;
     background-color: #3f1f09;
     text-align: right;
+}
+.sub{
+   background-color:#0080ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+
 }
