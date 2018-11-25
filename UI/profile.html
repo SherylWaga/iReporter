@@ -9,9 +9,9 @@
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
       <a href="profile.html">Profile </a>
-     <a href="entry.html">New Entry</a>
+      <a href="entry.html">New Entry</a>
       <a href="update.html"> Update Entry</a>
-             <a href="viewentries.html">View Entries</a>
+      <a href="viewentries.html">View Entries</a>
       
     </div>
     <!-- end of navbar -->
@@ -37,124 +37,124 @@
 
       <div class="split">
         <div class="tab">
-                        <button class="tablinks" onclick="category(event, 'unresolved')"><strong>Unresolved</strong></button>
-                        <button class="tablinks" onclick="category(event, 'investigate')"><strong>Under Investigation</stong></button>
-                        <button class="tablinks" onclick="category(event, 'resolved')"><strong>Resolved</strong></button>
-                        <button class="tablinks" onclick="category(event, 'rejected')"><strong>Rejected</strong></button>
-                      </div>
-        <!-- Tab content -->
-        <div id="unresolved" class="tabcontent">
-          <table>
-            <tr>
-              <th width=20%>
-                TITLE
-              </th>
-              <th width=40%>
-                DESCRIPTION
-              </th>
-              <th>TYPE</th>
+          <button class="tablinks" onclick="category(event, 'unresolved')"><strong>Unresolved</strong></button>
+          <button class="tablinks" onclick="category(event, 'investigate')"><strong>Under Investigation</stong></button>
+            <button class="tablinks" onclick="category(event, 'resolved')"><strong>Resolved</strong></button>
+            <button class="tablinks" onclick="category(event, 'rejected')"><strong>Rejected</strong></button>
+          </div>
+          <!-- Tab content -->
+          <div id="unresolved" class="tabcontent">
+            <table>
+              <tr>
+                <th width=20%>
+                  TITLE
+                </th>
+                <th width=40%>
+                  DESCRIPTION
+                </th>
+                <th>TYPE</th>
+                
+
+
+              </tr>
+              <tr>
+                <td>
+                  Bribery
+                </td>
+                <td>
+                  A police officer receiving bribe
+                </td>
+                <td>Redflg</td>
+                
+
+              </tr>
+
+            </table> 
+            <div>
+              <button  class ="danger" type='submit' >DELETE</button>
+
               
-
-
-            </tr>
-            <tr>
-              <td>
-                Bribery
-              </td>
-              <td>
-                A police officer receiving bribe
-              </td>
-              <td>Redflg</td>
               
+              <button  class ="btn" type='submit' onclick="window.location.href='update.html'">EDIT</button>
+              
+            </div>
 
-            </tr>
-
-          </table> 
-<div>
-                <button  class ="danger" type='submit' >DELETE</button>
-
-            
-               
-         <button  class ="btn" type='submit' onclick="window.location.href='update.html'">EDIT</button>
-     
-       </div>
-
-        </div>
-        
-        <div id="investigate" class="tabcontent">
-          <table>
-            <tr>
-              <th width=20%>
-                TITLE
-              </th>
-              <th width=40%>
-                DESCRIPTION
-              </th>
-<th>TYPE</th>
-            </tr>
-            <tr>
-              <td>
-                Broken Bridge
-              </td>
-              <td>
-                The bridge is broken right in the middle 
-              </td>
-              <td>Intervention</td>
+          </div>
+          
+          <div id="investigate" class="tabcontent">
+            <table>
+              <tr>
+                <th width=20%>
+                  TITLE
+                </th>
+                <th width=40%>
+                  DESCRIPTION
+                </th>
+                <th>TYPE</th>
+              </tr>
+              <tr>
+                <td>
+                  Broken Bridge
+                </td>
+                <td>
+                  The bridge is broken right in the middle 
+                </td>
+                <td>Intervention</td>
               </tr>
 
             </table>  
 
           </div>
-<div id="resolved" class="tabcontent">
-          <table>
-            <tr>
-              <th width=20%>
-                TITLE
-              </th>
-              <th width=40%>
-                DESCRIPTION
-              </th>
-<th>TYPE</th>
-            </tr>
-            <tr>
-              <td>
-                Bad Road
-              </td>
-              <td>
-                The road has alot of portholes
-              </td>
-              <td>Intervention</td>
+          <div id="resolved" class="tabcontent">
+            <table>
+              <tr>
+                <th width=20%>
+                  TITLE
+                </th>
+                <th width=40%>
+                  DESCRIPTION
+                </th>
+                <th>TYPE</th>
+              </tr>
+              <tr>
+                <td>
+                  Bad Road
+                </td>
+                <td>
+                  The road has alot of portholes
+                </td>
+                <td>Intervention</td>
               </tr>
 
             </table>  
 
           </div>
           <div id="rejected" class="tabcontent">
-          <table>
-            <tr>
-              <th width=20%>
-                TITLE
-              </th>
-              <th width=40%>
-                DESCRIPTION
-              </th>
-              <th>Type</th>
+            <table>
+              <tr>
+                <th width=20%>
+                  TITLE
+                </th>
+                <th width=40%>
+                  DESCRIPTION
+                </th>
+                <th>Type</th>
 
 
-            </tr>
-            <tr>
-              <td>
-                Poor infrastructure
-              </td>
-              <td>
-                building cracks
-              </td>
-<td>Intervention</td>
+              </tr>
+              <tr>
+                <td>
+                  Poor infrastructure
+                </td>
+                <td>
+                  building cracks
+                </td>
+                <td>Intervention</td>
 
-            </tr>
+              </tr>
 
-          </table> 
-        </div>
+            </table> 
+          </div>
 
           <div class="footer">
             <p>@Copyright 2018</p>
