@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>intervention</title>
+  <title>update entry</title>
   <link href="css/styles2.css" rel= "stylesheet">
 
   <body>
@@ -9,9 +9,10 @@
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
       <a href="profile.html">Profile </a>
-      <a href="redflag.html">Redflag</a>
-      <a href="intervention.html">Intervention</a>
-     
+      <a href="entry.html">New Entry</a>
+      <a href="update.html"> Update Entry</a>
+       <a href="viewentries.html">View Entries</a>
+      
     </div>
     <!-- end of navbar -->
     <div class ="divide">
@@ -28,21 +29,29 @@
 
     </div>
 
-    <div class="split">
+    <div >
 
      <div id="register" class="animate form">
       <form  action="profile.html" autocomplete="on">                  
        <p> 
-         
+            <label for="usernamesignup" class="uname" data-icon="u">TITLE:</label>
          <input id="usernamesignup" name="usernamesignup" required="required" type="" placeholder="Title" />
        </p>
        <p>    
-         
+            <label for="usernamesignup" class="uname" data-icon="u">DESCRIPTION:</label>
          <input id="emailsignup" name="emailsignup" required="required" type="text" placeholder="Description"/> 
        </p>
 
 
-       <p >
+        <select>
+          <option value="Redflag" >Redflag</option>
+          <option value="Intervention" >Intervention</option>
+
+        </p>
+
+
+       
+
         <br><br>
 
 
