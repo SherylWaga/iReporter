@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>red flag</title>
+  <title>new entry</title>
   <link href="css/styles2.css" rel= "stylesheet">
 
   <body>
@@ -9,9 +9,10 @@
     <div class="topnav">
       <a class="active" href="index.html">Home</a>
       <a href="profile.html">Profile </a>
-      <a href="redflag.html">Redflag</a>
-      <a href="intervention.html">Intervention</a>
-     
+      <a href="entry.html">New Entry</a>
+      <a href="update.html"> Update Entry</a>
+      <a href="viewentries.html">View Entries</a>
+      
       
 
     </div>
@@ -30,41 +31,47 @@
 
     </div>
 
-    <div class="split">
+    <div >
 
      <div id="register" class="animate form">
       <form  action="profile.html" autocomplete="on">                  
        <p> 
-         
+         <label for="usernamesignup" class="uname" data-icon="u">TITLE:</label>
          <input id="usernamesignup" name="usernamesignup" required="required" type="" placeholder="Title" />
        </p>
        <p>    
-         
+        <label for="usernamesignup" class="uname" data-icon="u">DESCRIPTION:</label>
          <input id="emailsignup" name="emailsignup" required="required" type="text area" placeholder="Description"/> 
        </p>
-       
+       <p>
 
-       <p >
-        <br><br>
-        <input class="sub" type="submit" value ="Submit">
-      </p>
+        <select>
+          <option value="Redflag" >Redflag</option>
+          <option value="Intervention" >Intervention</option>
+
+        </p>
+
+        <p >
+          <br><br>
+          <input class="sub" type="submit" value ="Submit">
+        </p>
 
 
-    </form>
+      </form>
 
 
 
+
+    </div>
 
   </div>
 
-</div>
 
-
-<!-- Footer -->
-<div class="footer">
-  <p>@Copyright 2018</p>
-</div>
-<!-- End Footer -->
+  <!-- Footer -->
+  <div class="footer">
+    <p>@Copyright 2018</p>
+  </div>
+  <!-- End Footer -->
 </body>
 </head>
 </html>
