@@ -25,6 +25,11 @@
 
 
         </form>
+          <p>Click the button to add location</p>
+
+<button class="btn"onclick="getLocation()">Edit location</button>
+
+<p id="demo"></p>   
       </div>
 
     </div>
@@ -73,6 +78,22 @@
   <p>@Copyright 2018</p>
 </div>
 <!-- End Footer -->
+ <script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    x.innerHTML = "Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude;
+}
+</script>
 </body>
 </head>
 </html>
