@@ -1,98 +1,124 @@
 <!doctype html>
 <html>
-    <head>
-    <title>login page</title>
-    <link href="css/styles2.css" rel= "stylesheet">
-    
-    <body>
-        <!-- creating navigation bar -->
-      <div class="topnav">
+<head>
+  <title>login page</title>
+  <link href="css/styles2.css" rel= "stylesheet">
+
+  <body>
+    <!-- creating navigation bar -->
+    <div class="topnav">
       <a class="active" href="index.html">Home</a>
       <a href="profile.html">Profile </a>
       <a href="redflag.html">Redflag</a>
-      <a href="admindash.html">Admin</a>
       <a href="intervention.html">Intervention</a>
-       
-      </div>
-      <!-- end of navbar -->
-      <div style="width: 20%; float:left">
-        <!-- Container -->
-            <div class="container">
-                <form class="form">
-                    <div class="road-img">
-                        <img style="width: 200px;height: 150px;" src="images/download.jpeg" alt="user image">
-                    </div>
-                    <h2>Username:</h2>
-                    <h4>Email:</h4>
-                    
-                </form>
-             </div>
-           
-         </div>
-         
-         <div style="width: 80%; float:right">
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'Redflag')">Redflag</button>
-                <button class="tablinks" onclick="openCity(event, 'Intervention')">Intervention</button>
+      
 
-              </div>
-              
-              <!-- Tab content -->
-              <div id="Redflag" class="tabcontent">
-                    <table>
-                            <tr>
-                                <th width=20%>
-                                NAME
-                                </th>
-                                <th width=40%>
-                                DESCRIPTION
-                                </th>
-                               
-                            
-                            </tr>
-                            <tr>
-                                <td>
-                                    Bribery
-                                </td>
-                                <td>
-                                    A police officer receiving bribe
-                                </td>
-                              
-                                
-                            </tr>
-                          
-                        </table> 
-              </div>
-              
-              
-    
-      	
-	<div class="footer">
-      <p>@Copyright 2018</p>
+
     </div>
-    <!-- End Footer -->
-    <script>
-        function openCity(evt, cityName) {
+    <!-- end of navbar -->
+    <div class="divide">
+      <!-- Container -->
+      <div class="container">
+        <form id="formp">
+          <div >
+            <img class="profile" src="images/download.jpeg" alt="user image">
+          </div>
+          <h3>Username:</h3>
+          <p>Jane Doe </p>
+          <h3>Email:</h3>
+          <p> janedoe@gmail.com <p>
+            <br>
+            <input class="prof" type="submit" value="Edit" >
+          </form>
+        </div>
+
+      </div>
+
+      <div class="split">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Redflag')">Redflag</button>
+          <button class="tablinks" onclick="openCity(event, 'Intervention')">Intervention</button>
+
+        </div>
+
+        <!-- Tab content -->
+        <div id="Redflag" class="tabcontent">
+          <table>
+            <tr>
+              <th width=20%>
+                TITLE
+              </th>
+              <th width=40%>
+                DESCRIPTION
+              </th>
+
+
+            </tr>
+            <tr>
+              <td>
+                Bribery
+              </td>
+              <td>
+                A police officer receiving bribe
+              </td>
+
+
+            </tr>
+
+          </table> 
+        </div>
+        <div id="Intervention" class="tabcontent">
+          <table>
+            <tr>
+              <th width=20%>
+                TITLE
+              </th>
+              <th width=40%>
+                DESCRIPTION
+              </th>
+
+
+            </tr>
+            <tr>
+              <td>
+                Broken Bridge
+              </td>
+              <td>
+                The bridge is broken right in the middle 
+              </td>
+              
+              </tr>
+
+            </table>  
+
+          </div>
+
+          <div class="footer">
+            <p>@Copyright 2018</p>
+          </div>
+          <!-- End Footer -->
+          <script>
+            function openCity(evt, cityName) {
       // Declare all variables
       var i, tabcontent, tablinks;
-  
+
       // Get all elements with class="tabcontent" and hide them
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = "none";
       }
-  
+
       // Get all elements with class="tablinks" and remove the class "active"
       tablinks = document.getElementsByClassName("tablinks");
       for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
-  
+
       // Show the current tab, and add an "active" class to the button that opened the tab
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
-  }
-    </script>
-    </body>
-    </head>
+    }
+  </script>
+</body>
+</head>
 </html>

@@ -56,7 +56,7 @@ form {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color:#3f1f09 ;
+    background-color:blue;
     color: white;
 }
 .btn{
@@ -149,4 +149,44 @@ img{
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+.divide{
+  width: 20%;
+  float: left;
+
+}
+.split{
+  width: 80%;
+  float: right;
+}
+.sub{
+   background-color:#0080ff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  width: 100px;
+}
+.profile{
+  width: 200px;
+  height: 150px;
+
+}
+.prof{
+   background-color:#0080ff;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  width: 100px;
+}
+#formp
+{
+  width: 200px
 }
