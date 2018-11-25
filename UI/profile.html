@@ -34,13 +34,12 @@
 
       <div class="split">
         <div class="tab">
-          <button class="tablinks" onclick="openCity(event, 'Redflag')">Redflag</button>
-          <button class="tablinks" onclick="openCity(event, 'Intervention')">Intervention</button>
-
-        </div>
-
+                        <button class="tablinks" onclick="category(event, 'unresolved')"><strong>Unresolved</strong></button>
+                        <button class="tablinks" onclick="category(event, 'investigate')"><strong>Under Investigation</stong></button>
+                        <button class="tablinks" onclick="category(event, 'resolved')"><strong>Resolved</strong></button>
+                      </div>
         <!-- Tab content -->
-        <div id="Redflag" class="tabcontent">
+        <div id="unresolved" class="tabcontent">
           <table>
             <tr>
               <th width=20%>
@@ -49,6 +48,7 @@
               <th width=40%>
                 DESCRIPTION
               </th>
+              <th>Type</th>
 
 
             </tr>
@@ -59,13 +59,13 @@
               <td>
                 A police officer receiving bribe
               </td>
-
+<td>Redflg</td>
 
             </tr>
 
           </table> 
         </div>
-        <div id="Intervention" class="tabcontent">
+        <div id="investigate" class="tabcontent">
           <table>
             <tr>
               <th width=20%>
@@ -74,7 +74,7 @@
               <th width=40%>
                 DESCRIPTION
               </th>
-
+<th>TYPE</th>
             </tr>
             <tr>
               <td>
@@ -83,7 +83,31 @@
               <td>
                 The bridge is broken right in the middle 
               </td>
-              
+              <td>Intervention</td>
+              </tr>
+
+            </table>  
+
+          </div>
+<div id="resolved" class="tabcontent">
+          <table>
+            <tr>
+              <th width=20%>
+                TITLE
+              </th>
+              <th width=40%>
+                DESCRIPTION
+              </th>
+<th>TYPE</th>
+            </tr>
+            <tr>
+              <td>
+                Bad Road
+              </td>
+              <td>
+                The road has alot of portholes
+              </td>
+              <td>Intervention</td>
               </tr>
 
             </table>  
@@ -95,7 +119,7 @@
           </div>
           <!-- End Footer -->
           <script>
-            function openCity(evt, cityName) {
+            function category(evt, name) {
       // Declare all variables
       var i, tabcontent, tablinks;
 
@@ -108,12 +132,12 @@
       // Get all elements with class="tablinks" and remove the class "active"
       tablinks = document.getElementsByClassName("tablinks");
       for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].name.replace(" active", "");
       }
 
       // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
+      document.getElementById(name).style.display = "block";
+      evt.currentTarget.name += " active";
     }
   </script>
 </body>
