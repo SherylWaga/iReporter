@@ -25,11 +25,11 @@
 
 
         </form>
-          <p>Click the button to add location</p>
+        <p>Click the button to add location</p>
 
-<button class="btn"onclick="getLocation()">Edit location</button>
+        <button class="btn"onclick="getLocation()">Edit location</button>
 
-<p id="demo"></p>   
+        <p id="location"></p>   
       </div>
 
     </div>
@@ -40,11 +40,12 @@
       <form  action="profile.html" autocomplete="on">                  
        <p> 
         <label for="usernamesignup" class="uname" data-icon="u">TITLE:</label>
-        <input id="usernamesignup" name="usernamesignup" required="required" type="" placeholder="Title" />
+        <input id="usernamesignup" name="usernamesignup"  type="" placeholder="Title" />
       </p>
       <p>    
-        <label for="usernamesignup" class="uname" data-icon="u">DESCRIPTION:</label>
-        <input id="emailsignup" name="emailsignup" required="required" type="text" placeholder="Description"/> 
+        <label for="usernamesignup" class="uname" data-icon="u">DESCRIPTION:</label><br><br>
+        
+        <textarea name="message" rows="10" cols="38" placeholder="Enter description"></textarea>
       </p>
 
 
@@ -78,21 +79,21 @@
   <p>@Copyright 2018</p>
 </div>
 <!-- End Footer -->
- <script>
-var x = document.getElementById("demo");
+<script>
+  var x = document.getElementById("location");
 
-function getLocation() {
+  function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+      navigator.geolocation.getCurrentPosition(showPosition);
     } else { 
-        x.innerHTML = "Geolocation is not supported by this browser.";
+      x.innerHTML = "Geolocation is not supported by this browser.";
     }
-}
+  }
 
-function showPosition(position) {
+  function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
-}
+  }
 </script>
 </body>
 </head>
